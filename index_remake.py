@@ -5,7 +5,7 @@ substring = input("Enter a substring to find: ")
 # Initialize a variable to store the index
 index = -1
 # Loop through the input
-for i in range(len(user_input)):
+for i in range(len(user_input) - len(substring) + 1):
     # Check if the substring is at the current index
     if user_input[i:i+len(substring)] == substring:
         index = i
